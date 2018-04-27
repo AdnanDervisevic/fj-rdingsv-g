@@ -33,7 +33,7 @@ class App extends Component {
 					{this.state.input && this.state.input.length &&
 						<div>
 							<h3>Fjärdingsväg per dag</h3>
-							<h1>{this.state.input * ((24 / 1.660304) * this.state.pace).toFixed(2)}</h1>
+							<h1>{(this.state.input * ((24 / 1.660304) * this.state.pace)).toFixed(2)}</h1>
 						</div>
 					}
 				</div>
